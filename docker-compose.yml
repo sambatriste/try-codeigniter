@@ -19,6 +19,8 @@ services:
       - ./www:/var/www:cached
     ports:
       - 8888:80
+    links:
+      - mysql
  
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
